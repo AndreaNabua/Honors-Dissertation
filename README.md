@@ -14,8 +14,10 @@ It has been observed that similar drugs share similar side effects. Collaborativ
 similarities. CF can leverage the similarities between drugs to predict potential side effects. There have been efforts to employ CF techniques to
 predict the potential side effects of drugs (see Figure 1).
 
+<br>
 
 ![previousworks](https://github.com/AndreaNabua/Dissertation/assets/71378647/ae013908-54e6-421f-b76b-fa368ea00735)
+
 ***Figure 1.* Existing research that attempts to predict DSEs. There are only 2 RS methods as far as we know. Known-SE-based methods use only DSE information to predict the potential DSEs, while Drug-BG based use biological and chemical information of a drug as well.**
 
 
@@ -34,12 +36,14 @@ Collaborative filtering works with what is generally known as a utility matrix, 
 **LFM (Latent factor model) is a type of CF method**, which uses matrix factorization techniques in order to predict the unknown slots (i.e., the 0s) in the matrix.
 
 ![loading-dataset-pauwel](https://github.com/AndreaNabua/Dissertation/assets/71378647/33c661d8-f541-4263-805d-b1944ab93255)
+
 ***Figure 2.*  The datasets are in the form of a drug-side effect matrix. Each row represents a drug, and each column a side effect. 1’s in the matrix indicate an association between the drugs and side effects, and 0 indicates an unknown association. It is sparse, with a densities of generally roughly 5%.**
 
 ## Methods
 In order to compare against the benchmark models, 2 methodologies were undergone by our proposed model: Galeano’s and Zhang’s methodology (See Figure 3). 2 benchmark models underwent Galeano (Galeano’s model and PPN-Net), while the other 7 underwent Zhang’s methodology.
 
 ![methods](https://github.com/AndreaNabua/Dissertation/assets/71378647/7776ef78-bbd3-409b-8e52-4737bf34f463)
+
 ***Figure 3.* Zhang’s Methodology (left) and Galeano’s
 Methodology (right)**
 
@@ -50,6 +54,7 @@ The primary metric of evaluation is the AUPRC, as it better handles data imbalan
 * In terms of the other non-primary metrics, the results raise the question of whether this is a good model. E.g. Our model achieves high recall (99%) at the expense of very low precision (4%) on Galeano’s Dataset.
 
 ![results-combined](https://github.com/AndreaNabua/Dissertation/assets/71378647/b7bb1507-98ea-4185-b5e2-5880700e95b4)
+
 ***Figure 4.* (left) and *Figure 5.* (right)** 
 
 
